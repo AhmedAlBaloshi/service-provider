@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class>
 @include('layouts.app-head')
 
 <body>
@@ -9,3 +9,5 @@
     @include('layouts.app-footer')
     @include('layouts.app-script')
 </body>
+
+</html>
