@@ -1,6 +1,66 @@
 @extends('layouts.app')
 @section('title', 'Home')
 @section('content')
+<div class="mx-auto max-w-screen-lg px-4 text-center">
+    <h1 class="pb-4">
+        <span class="lg:block">Client Portal Software</span>
+        For Growing Agencies
+    </h1>
+    <p class="lead mx-auto max-w-screen-sm">
+        Bring your clients, payments, and projects under one roof. Built for
+        Digital Marketing, SEO &amp; Content agencies.
+    </p>
+</div>
+
+{{-- <video id="video" width="640" height="360" controls
+    style="display: none"
+    >
+        <source src="https://www.youtube.com/embed/tgbNymZ7vqY" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> --}}
+
+{{-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe> --}}
+
+<div class="relative mx-auto max-w-screen-lg px-4 lg:px-0" data-hero-video>
+    <iframe class="-mb-10 hidden aspect-video w-full rounded-lg shadow-lg" data-src="https://www.youtube-nocookie.com/embed/TebnpN3Tacg?rel=0&amp;autoplay=1&amp;showinfo=0&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="absolute inset-0" data-play>
+        <div class="flex h-full">
+            <div id="playBtn" class="m-auto flex cursor-pointer items-center rounded-full bg-purple px-6 py-4 text-white shadow-lg shadow-purple/20 transition-all hover:-translate-y-1 hover:shadow-xl motion-safe:animate-fade-in">
+                <svg class="mr-2 h-4 w-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
+                    </path>
+                </svg>
+                <a id="openVideo"> 00:45 Intro </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="-mb-10 aspect-[945/552]">
+        <iframe style="border-radius: 8px;display:none" id="video" class="block" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/TebnpN3Tacg?rel=0&amp;autoplay=1&amp;showinfo=0&amp;controls=0">
+        </iframe>
+        <picture class=" block" id="picture">
+            <source srcset="https://spp.co/images/screenshots/w-full/orders.webp 2768w,https://spp.co/images/screenshots/w-2048/orders.webp 2048w,https://spp.co/images/screenshots/w-1536/orders.webp 1536w,https://spp.co/images/screenshots/w-1024/orders.webp 1024w,https://spp.co/images/screenshots/w-860/orders.webp 860w,https://spp.co/images/screenshots/w-400/orders.webp 400w" sizes="(min-width: 1024px) 1024px, calc(100vw - 2rem)" type="image/webp">
+            </source>
+            <img src="images/screenshots-orders.png" alt="List of orders with their statuses" title="Sell and deliver productized services from one place" class="h-auto w-full rounded shadow-lg md:rounded-lg">
+        </picture>
+    </div>
+</div>
+
+</section>
+<section class="!py-8 overflow-x-hidden logos bg-gradient-to-b from-blue-50 ">
+<div class="flex max-w-screen-lg px-4 mx-auto">
+    <img src="{{ asset('assets/images/customer-logos-amw.png') }}" alt="AMW logo">
+    <img src="{{ asset('assets/images/customer-logos-loganix.png') }}" alt="Loganix logo">
+    <img src="{{ asset('assets/images/customer-logos-podblade.png') }}" alt="Podblade logo">
+    <img src="{{ asset('assets/images/customer-logos-ranked.png') }}" alt="Ranked.ai logo">
+    <img src="{{ asset('assets/images/customer-logos-seobros.png') }}" alt="SEObros logo">
+    <img src="{{ asset('assets/images/customer-logos-wordagents.png') }}" alt="WordAgents logo">
+    <img src="{{ asset('assets/images/customer-logos-wpspeedfix.png') }}" alt="WPspeedfix logo">
+</div>
+</section>
+
     <section class="px-4 pt-0">
         <div class="text-center">
             <a href="trial.html" class="btn-cta block w-auto sm:inline-block">
@@ -1834,4 +1894,30 @@
             </a>
         </div>
     </section>
+
+<script>
+    document.getElementById("openVideo").addEventListener("click", function(event) {
+        event.preventDefault();
+
+        var video = document.getElementById('video');
+        var picture = document.getElementById('picture');
+        var playBtn = document.getElementById('playBtn');
+
+        video.style.display = "block";
+
+        picture.style.display = "none";
+        playBtn.style.display = "none";
+
+        // if (video.src.includes("youtube.com")) {
+        //     // Construct the YouTube Player API URL
+        //     var videoId = video.src.split("/").pop();
+        //     var youtubePlayerUrl = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+        //     console.log(youtubePlayerUrl)
+        //     video.src = youtubePlayerUrl;
+        // }
+        // Your custom code here
+    });
+
+</script>
+
 @endsection
