@@ -257,7 +257,7 @@ document.querySelectorAll("div[data-hero-video]").forEach((e) => {
 })();
 
 function T(t) {
-    return t.split("-")[0];
+    return t? t.split("-")[0] : '';
   }
   function nt(t) {
     return t.split("-")[1];
