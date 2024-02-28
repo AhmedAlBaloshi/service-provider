@@ -20,4 +20,11 @@ Route::get('/', function () {
 Route::get('/trial', function () {
     return view('trial');
 });
+
 Route::get('/pricing', [PricingController::class, 'index']);
+
+Route::group(['prefix' => 'features'], function () {
+    Route::get('/billing', function () {
+        return view('features.billing');
+    });
+});
