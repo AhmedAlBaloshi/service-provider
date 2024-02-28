@@ -17,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/trial', function () {
+    return view('trial');
+});
 Route::get('/pricing', [PricingController::class, 'index']);

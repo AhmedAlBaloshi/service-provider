@@ -42,7 +42,7 @@
                 </li>
 
                 <li class="my-4 text-center lg:my-0">
-                    <a href="trial.html" class="mx-4 transform whitespace-nowrap rounded-full bg-yellow-400 px-4 py-1 text-xs font-bold text-blue-900 transition-all hover:-translate-y-0.5 hover:shadow-md" data-affiliate-customize>
+                    <a href="{{ url('trial') }}" class="mx-4 transform whitespace-nowrap rounded-full bg-yellow-400 px-4 py-1 text-xs font-bold text-blue-900 transition-all hover:-translate-y-0.5 hover:shadow-md" data-affiliate-customize>
                         Free Trial
                     </a>
                 </li>
