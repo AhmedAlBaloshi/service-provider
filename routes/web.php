@@ -27,4 +27,7 @@ Route::group(['prefix' => 'features'], function () {
     Route::get('/billing', function () {
         return view('features.billing');
     });
+    Route::get('/order-management', function () {
+        return view('features.order-management');
+    });
 });

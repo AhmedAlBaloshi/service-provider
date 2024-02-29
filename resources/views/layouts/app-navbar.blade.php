@@ -62,7 +62,7 @@
             <div>
                 <div class="mx-4 hidden overflow-hidden rounded transition-all duration-200 sm:mx-0" id="features">
                     <div class="grid gap-4 bg-white p-4 sm:grid-cols-2">
-                        <a class="group block rounded px-3 py-2 transition-all hover:bg-gray-100" href="billing.html" icon="fad-cart-shopping" title="Billing" description="Increase your average order with fast and flexible payment flows.">
+                        <a class="group block rounded px-3 py-2 transition-all hover:bg-gray-100" href="{{ url('features/billing') }}" icon="fad-cart-shopping" title="Billing" description="Increase your average order with fast and flexible payment flows.">
                             <div class="flex items-start gap-x-5">
                                 <div class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-100 group-hover:bg-white">
                                     <svg class="h-5 w-5 text-blue-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512">
@@ -94,7 +94,7 @@
                             </div>
                         </a>
 
-                        <a class="group block rounded px-3 py-2 transition-all hover:bg-gray-100" href="order-management.html" icon="fad-conveyor-belt" title="Projects" description="Assign work to your team without the data entry.">
+                        <a class="group block rounded px-3 py-2 transition-all hover:bg-gray-100" href="{{ url('features/order-management') }}" icon="fad-conveyor-belt" title="Projects" description="Assign work to your team without the data entry.">
                             <div class="flex items-start gap-x-5">
                                 <div class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-100 group-hover:bg-white">
                                     <svg class="h-5 w-5 text-blue-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512">
