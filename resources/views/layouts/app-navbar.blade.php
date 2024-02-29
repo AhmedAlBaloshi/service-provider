@@ -489,7 +489,7 @@
                     </div>
                     <div class="bottom-section bg-gray-100">
                         <a href="running-google-my-business-management-service.html">
-                            <img loading="lazy" src="images/customers-garrett-case-study.png" alt="How Garrett Smith is Running a Highly Automated Google My Business Management Service" title="Get the full case study now" class="rounded transition-all hover:-translate-y-0.5 hover:shadow-sm">
+                            <img loading="lazy" src="{{('assets/images/customers-garrett-case-study.png')}}" alt="How Garrett Smith is Running a Highly Automated Google My Business Management Service" title="Get the full case study now" class="rounded transition-all hover:-translate-y-0.5 hover:shadow-sm">
                         </a>
                     </div>
                 </div>
