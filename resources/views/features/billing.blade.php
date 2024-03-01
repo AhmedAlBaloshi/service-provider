@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Plans &amp; Pricing | Service Provider Pro')
+@section('title', 'Client Billing for Agencies | Service Provider Pro')
 @section('content')
 <div class="mx-auto max-w-4xl px-4 text-center">
     <h1 class="pb-4">Payment Flows Optimized For Services</h1>

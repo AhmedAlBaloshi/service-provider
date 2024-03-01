@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Home')
+@section('title', 'Customizable Client Portal Software For Productized Agencies | Service Provider Pro')
 @section('content')
 <div class="mx-auto max-w-screen-lg px-4 text-center">
     <h1 class="pb-4">

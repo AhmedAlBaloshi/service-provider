@@ -126,7 +126,7 @@
                             </div>
                         </a>
 
-                        <a class="group block rounded px-3 py-2 transition-all hover:bg-gray-100" href="crm.html" icon="fad-user-tie" title="CRM" description="Track your contacts, leads, and clients in one place.">
+                        <a class="group block rounded px-3 py-2 transition-all hover:bg-gray-100" href="{{ url('features/crm') }}" icon="fad-user-tie" title="CRM" description="Track your contacts, leads, and clients in one place.">
                             <div class="flex items-start gap-x-5">
                                 <div class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-100 group-hover:bg-white">
                                     <svg class="h-5 w-5 text-blue-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">

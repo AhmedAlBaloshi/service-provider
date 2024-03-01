@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Plans &amp; Pricing | Service Provider Pro')
+@section('title', 'Plans & Pricing | Service Provider Pro')
 @section('content')
 
 <div class="mx-auto max-w-screen-xl px-4">

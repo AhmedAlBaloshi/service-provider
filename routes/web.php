@@ -30,4 +30,7 @@ Route::group(['prefix' => 'features'], function () {
     Route::get('/order-management', function () {
         return view('features.order-management');
     });
+    Route::get('/crm', function () {
+        return view('features.crm');
+    });
 });

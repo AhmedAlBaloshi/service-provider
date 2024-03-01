@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Plans &amp; Pricing | Service Provider Pro')
+@section('title', 'Project Management for Agencies | Service Provider Pro')
 @section('content')
 <div class="mx-auto max-w-screen-xl px-4 text-center">
     <h1 class="pb-4">Project Management Without The Data Entry</h1>

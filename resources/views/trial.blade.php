@@ -2,6 +2,7 @@
 <html lang="en" class>
 @include('layouts.app-head')
 
+
 <body>
 <div class="trial pb-20">
     <section class="jumbotron">
