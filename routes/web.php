@@ -36,4 +36,7 @@ Route::group(['prefix' => 'features'], function () {
     Route::get('/helpdesk', function () {
         return view('features.helpdesk');
     });
+    Route::get('/form-builder', function () {
+        return view('features.form-builder');
+    });
 });
