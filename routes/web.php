@@ -39,4 +39,7 @@ Route::group(['prefix' => 'features'], function () {
     Route::get('/form-builder', function () {
         return view('features.form-builder');
     });
+    Route::get('/affiliates', function () {
+        return view('features.affiliates');
+    });
 });
