@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 Route::get('/trial', function () {
     return view('trial');
-});
+})->name('trial');
 
 Route::get('/pricing', [PricingController::class, 'index']);
 
@@ -32,5 +32,8 @@ Route::group(['prefix' => 'features'], function () {
     });
     Route::get('/crm', function () {
         return view('features.crm');
+    });
+    Route::get('/helpdesk', function () {
+        return view('features.helpdesk');
     });
 });

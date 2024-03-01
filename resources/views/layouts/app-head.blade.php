@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="baseUrl" content="{{ url('/') }}">
     <title>
-        @if(request()->url('trial'))
+        @if(request()->routeIs('trial'))
         Sign Up Instantly | Service Provider Pro
         @else
         @yield('title')
         @endif
+
     </title>
     <link rel="icon" href="{{ asset('assets/favicons/favicons-favicon-32.png') }}" sizes="32x32">
     <link rel="icon" href="{{ asset('assets/favicons/favicons-favicon-32.png') }}" sizes="57x57">
